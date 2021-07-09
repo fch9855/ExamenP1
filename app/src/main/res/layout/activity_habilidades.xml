@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Habilidades">
+    <TextView
+        android:id="@+id/nombreHeroe"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Nombre de Heroe: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/nombreCompleto"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/caracteristicas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1= Inteligencia\n2= Fuerza\n3= Durabildiad\n4=  Velocidad\n5= Poder\n6= Combate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/Grafico"
+        android:layout_width="411dp"
+        android:layout_height="383dp"
+        android:layout_gravity="center"
+        android:layout_margin="21dp" />
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="Volver"
+        android:text="Volver"
+        app:icon="@drawable/abc_vector_test"
+        app:iconTint="#FFFFFF" />
+</LinearLayout>
